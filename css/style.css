@@ -10,12 +10,15 @@ body {
 }
 
 .geral {
+    background-color: #222;
     width: 100%;
     height: 100%;
     border: 1px solid;
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
     align-items: center;
+    color: white;
 }
 
 .visor {
@@ -30,27 +33,32 @@ table {
     border: solid;
     border-radius: 20px;
     padding: 10px;
+    display: flex;
+    justify-content: space-around;
 }
 
-.numerais, .linhas-criadas {
-    width: 50%;
-    /* border: solid; */
+.numerais, .linhas-criadas  {
+    width: 250px;
+    border: solid;
+    padding: 10px;
     font-size: 30px;
     text-align: center;
 }
 
 .container {
-    width: 90%;
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
 
 #resultado, #zerar {
+    background-color: lightgrey;
     border: solid;
     border-radius: 10px;
     padding: 10px;
-    color: black;
+    color: blue;
     font-size: 20px;
+    font-weight: bold;
     text-decoration: none;
+    box-shadow: 1px 2px 20px blue, 2.5px -1.5px 10px white;
 }
