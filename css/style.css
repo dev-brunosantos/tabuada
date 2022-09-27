@@ -22,7 +22,8 @@ body {
 
 .tabela {
     width: 100%;
-    height: 70%;
+    height: auto;
+    padding: 40px 0;
     background: url("../quadro.jpg") no-repeat center;
     background-size: 100% 100%;
     display: flex;
