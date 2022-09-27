@@ -57,7 +57,7 @@ td {
 }
 
 .resultados {
-  overflow: auto;
+  overflow: scroll;
 }
 
 .container {
