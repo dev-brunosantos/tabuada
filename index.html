@@ -4,61 +4,103 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <link rel="stylesheet" href="css/style.css">
-
     <title>Tabuada</title>
+
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
     <div class="geral">
-
-        <input type="number" class="visor" id="visor" placeholder="Digite o número multiplicador">
+        <h1 class="titulo">Tabuada</h1>
 
         <table>
-            <tr class="linhas">
+            <tr>
+                <th>Num.</th>
+                <th></th>
+                <th>Mult.</th>
+                <th></th>
+                <th>Resul.</th>
+            </tr>
+            <tr>
                 <td class="numerais">1</td>
+                <td class="extra">x</td>
+                <td class="multiplicador"></td>
+                <td class="extra">=</td>
+                <td class="resultados"></td>
             </tr>
-            <tr class="linhas">
+            <tr>
                 <td class="numerais">2</td>
+                <td class="extra">x</td>
+                <td class="multiplicador"></td>
+                <td class="extra">=</td>
+                <td class="resultados"></td>
             </tr>
-            </tr>
-            <tr class="linhas">
+            <tr>
                 <td class="numerais">3</td>
+                <td class="extra">x</td>
+                <td class="multiplicador"></td>
+                <td class="extra">=</td>
+                <td class="resultados"></td>
             </tr>
-            </tr>
-            <tr class="linhas">
+            <tr>
                 <td class="numerais">4</td>
+                <td class="extra">x</td>
+                <td class="multiplicador"></td>
+                <td class="extra">=</td>
+                <td class="resultados"></td>
             </tr>
-            </tr>
-            <tr class="linhas">
+            <tr>
                 <td class="numerais">5</td>
+                <td class="extra">x</td>
+                <td class="multiplicador"></td>
+                <td class="extra">=</td>
+                <td class="resultados"></td>
             </tr>
-            </tr>
-            <tr class="linhas">
+            <tr>
                 <td class="numerais">6</td>
+                <td class="extra">x</td>
+                <td class="multiplicador"></td>
+                <td class="extra">=</td>
+                <td class="resultados"></td>
             </tr>
-            </tr>
-            <tr class="linhas">
+            <tr>
                 <td class="numerais">7</td>
+                <td class="extra">x</td>
+                <td class="multiplicador"></td>
+                <td class="extra">=</td>
+                <td class="resultados"></td>
             </tr>
-            </tr>
-            <tr class="linhas">
+            <tr>
                 <td class="numerais">8</td>
+                <td class="extra">x</td>
+                <td class="multiplicador"></td>
+                <td class="extra">=</td>
+                <td class="resultados"></td>
             </tr>
-            </tr>
-            <tr class="linhas">
+            <tr>
                 <td class="numerais">9</td>
+                <td class="extra">x</td>
+                <td class="multiplicador"></td>
+                <td class="extra">=</td>
+                <td class="resultados"></td>
             </tr>
-            </tr>
-            <tr class="linhas">
+            <tr>
                 <td class="numerais">10</td>
+                <td class="extra">x</td>
+                <td class="multiplicador"></td>
+                <td class="extra">=</td>
+                <td class="resultados"></td>
             </tr>
         </table>
 
         <div class="container">
-            <button id="resultado">Multiplicar</button>
-            <a href="" id="zerar">Repetir</a>
+            <label for="visor">Digite o nº multiplicador</label>
+            <input type="number" placeholder="000" class="visor" id="visor">
+        </div>
+
+        <div class="botoes">
+            <button id="multiplicar" class="btn">Multiplicar</button>
+            <button id="apagar" class="btn">Apagar</button>
         </div>
     </div>
     

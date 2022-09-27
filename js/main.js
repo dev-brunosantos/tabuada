@@ -1,24 +1,35 @@
-// DECLARAÇÃO DE VAIÁVIES 
-var numeroMultilicador = document.getElementById('visor');
-var numerais = document.querySelectorAll('.numerais');
-var resultados = document.querySelectorAll('.valor')
-const btnResultado = document.getElementById('resultado');
-var teste;
-var linhasDaTabela = document.querySelectorAll('.linhas');
+// DECLARAÇÕES DE VARIÁVIES
+var numerais = document.querySelectorAll('.numerais')
+var numMultiplicador = document.querySelectorAll('.multiplicador')
+var resultados = document.querySelectorAll('.resultados')
 
-// DECLARAÇÃO DE FUNÇÕES 
-btnResultado.addEventListener('click', multiplicar);
+var multiplicador = document.getElementById('visor')
+
+const btnMultiplicar = document.getElementById('multiplicar');
+const btnApagar = document.getElementById('apagar');
+
+// ____________________________________________
+
+btnMultiplicar.addEventListener('click', multiplicar)
+btnApagar.addEventListener('click', apagar)
+
+// __________________________________________
+// FUNÇÕES
 
 function multiplicar() {
-    for(var i=0; i<numerais.length;i++) {
-        teste = numerais[i].textContent * numeroMultilicador.value;
+    for(var i=0; i<numMultiplicador.length; i++) {
+
+        numMultiplicador[i].textContent = multiplicador.value;
+        resultados[i].textContent = numerais[i].textContent * multiplicador.value; 
+    }
+}
+
+function apagar() {
+    
+    for(var valor=0; valor<numMultiplicador.length; valor++) {
+        visor.value = ""
         
-        var num = document.createElement('td');
-        num.classList.add('linhas-criadas')
-        num.textContent = teste;
-        
-        for(var valor=0; valor<linhasDaTabela.length; valor++) {
-            linhasDaTabela[i].appendChild(num)
-        }
+        numMultiplicador[valor].textContent = multiplicador.value;
+        resultados[valor].textContent = multiplicador.value; 
     }
 }
